@@ -1,0 +1,44 @@
+body{
+  background-color:black;
+}
+
+h1{
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(190, 48, 179);
+  text-align: center;
+}
+
+h2{
+  font-size: 25px;
+  font-weight: bold;
+  color: tomato;
+  text-decoration: underline;
+  border-style: dotted;
+  border-color:tomato;
+  border-width: 1px;
+  
+}
+
+h3{
+  font-size: 25px;
+  font-weight: bold;
+  color:blueviolet;
+  text-decoration: underline;
+  border-style: double;
+  border-color: blueviolet;
+  border-width: 1px;
+}
+
+main{
+  color:rgb(37, 181, 162);
+  font-size: larger;
+  font-family: 'Times New Roman', Times, serif;
+  border: 10px 10px 10px 10px;
+  border-style: double;
+  border-width: 5px;
+  border-color:blueviolet;
+  padding: 50px 50px 50px 50px;
+  text-align: center;
+
+}
