@@ -83,23 +83,26 @@ function retire(){
 
 retire();
 
-// function(){
-//   let numGuesses;
+function guessinggame(){
+  let numGuesses;
 
-// for (numGuesses = 0; numGuesses < 4; numGuesses++ ){
-//   let sixthQuestionguess = prompt('What is the number of my top destinations?');
-//   if(sixthQuestionguess > 10 ){
-//     alert('too high!');
-//   }else if(sixthQuestionguess < 10){
-//     alert('too low!');
-//   }else if(sixthQuestionguess === 10){
-//     alert('Yay!That is correct.');
-//     score++;
-//     break;
-//   }else{
-//     alert('Please type in a number');
-//   }
-// }
+  for (numGuesses = 0; numGuesses < 4; numGuesses++ ){
+    let sixthQuestionguess = +prompt('What is the number of my top destinations?');
+    if(sixthQuestionguess > 10 ){
+      alert('too high!');
+    }else if(sixthQuestionguess < 10){
+      alert('too low!');
+    }else if(sixthQuestionguess === 10){
+      alert('Yay!That is correct.');
+      score++;
+      break;
+    }else{
+      alert('Please type in a number');
+    }
+  }
+}
+
+guessinggame();
 
 // if(numGuesses >= 4){
 //   alert('All attempts have been exhausted!Correct number is 10');
