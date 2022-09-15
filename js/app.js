@@ -109,29 +109,31 @@ function guessinggame(){
 guessinggame();
 
 
-// function(){
-//   let Top10Destinations = ['the great pyramid of giza', 'eiffel tower', 'Machu Pichu', 'Grand Canyon', 'Hawai', 'Chichen Itza', 'Cape of Good Hope', 'Denali National Park', 'Maasai Mara', 'Switzerland'];
+function destinations(){
+  let Top10Destinations = ['the great pyramid of giza', 'eiffel tower', 'Machu Pichu', 'Grand Canyon', 'Hawai', 'Chichen Itza', 'Cape of Good Hope', 'Denali National Park', 'Maasai Mara', 'Switzerland'];
 
-// let Guesscount = 0;
-// let bool = false;
-// while (Guesscount < 6 && bool === false) {
+  let Guesscount = 0;
+  let bool = false;
+  while (Guesscount < 6 && bool === false) {
 
-//   let seventhQuestionguess = prompt('What is one of my Top 10 Destinations?');
+    let seventhQuestionguess = prompt('What is one of my Top 10 Destinations?');
 
-//   Guesscount++;
-//   for (let i = 0; i < Top10Destinations.length; i++) {
-//     console.log(seventhQuestionguess, Top10Destinations[i]);
-//     if (seventhQuestionguess === Top10Destinations[i]) {
-//       alert(`You are correct! These are my top 10 destinations : ${Top10Destinations}!`);
-//       score++;
-//       bool = true;
-//       break;
-//     }
-//   }
-//   if (bool === false) {
-//     alert(`Sorry that is incorrect.These are my top 10 destinations : ${Top10Destinations}!`);
-//   }
-// }
-// }
-// alert(`Thank you for playing ${guestName}.You scored ${score} points.`);
+    Guesscount++;
+    for (let i = 0; i < Top10Destinations.length; i++) {
+      console.log(seventhQuestionguess, Top10Destinations[i]);
+      if (seventhQuestionguess === Top10Destinations[i]) {
+        alert(`You are correct! These are my top 10 destinations : ${Top10Destinations}!`);
+        score++;
+        bool = true;
+        break;
+      }
+    }
+    if (bool === false) {
+      alert(`Sorry that is incorrect.These are my top 10 destinations : ${Top10Destinations}!`);
+    }
+  }
+}
+destinations();
+
+alert(`Thank you for playing ${guestName}.You scored ${score} points.`);
 
