@@ -54,18 +54,19 @@ videogames();
 // console.log('score', score);
 
 
-// function(){
-//   let fourthQuestionguess = prompt('Do I like to travel?').toLowerCase();
+function travel(){
+  let fourthQuestionguess = prompt('Do I like to travel?').toLowerCase();
 
-// if(fourthQuestionguess === 'y' || fourthQuestionguess === 'yes' ){
-//   // console.log('You are correct.I could travel the whole world if I could.');
-//   alert('You are correct.I could travel the whole world if I could.');
-//   score++;
-// }else if(fourthQuestionguess === 'n' || fourthQuestionguess === 'no'){
-//   alert('Sorry that is incorrect');
-// }
-// }
+  if(fourthQuestionguess === 'y' || fourthQuestionguess === 'yes' ){
+  // console.log('You are correct.I could travel the whole world if I could.');
+    alert('You are correct.I could travel the whole world if I could.');
+    score++;
+  }else if(fourthQuestionguess === 'n' || fourthQuestionguess === 'no'){
+    alert('Sorry that is incorrect');
+  }
+}
 
+travel();
 
 
 // function(){
