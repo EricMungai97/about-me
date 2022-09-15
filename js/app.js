@@ -69,7 +69,7 @@ for (numGuesses = 0; numGuesses < 4; numGuesses++ ){
     alert('too high!');
   }else if(sixthQuestionguess < 10){
     alert('too low!');
-  }else if(sixthQuestionguess === '10'){
+  }else if(sixthQuestionguess === 10){
     alert('Yay!That is correct.');
     score++;
     break;
