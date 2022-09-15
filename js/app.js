@@ -4,16 +4,18 @@ console.log('hey world heyyyy!');
 
 let guestName = prompt('What is your name?');
 
+let score = 0;
+
 alert(`Welcome to my site ${guestName}! Kindly answer yes or no to the following questions.`);
+
+
 
 function born(){
   let firstQuestionguess = prompt('Am I born and raised in the US?').toUpperCase();
 
-  let score = 0;
-
-  if( firstQuestionguess === 'Y' || firstQuestionguess === 'YES'){
+  if (firstQuestionguess === 'Y' || firstQuestionguess === 'YES'){
     alert('Sorry you are wrong');
-  }else if(firstQuestionguess === 'N' || firstQuestionguess === 'NO'){
+  } else if (firstQuestionguess === 'N' || firstQuestionguess === 'NO'){
   // console.log('That is correct.I was born and raised in Nairobi Kenya.');
     alert('That is correct.I was born and raised in Nairobi Kenya.');
     score++;
@@ -36,17 +38,24 @@ function bachelors(){
 
 bachelors();
 
-// let thirdquestionguess = prompt('Do I play video games?').toUpperCase();
+function videogames(){
+  let thirdquestionguess = prompt('Do I play video games?').toUpperCase();
 
-// if(thirdquestionguess === 'Y' || thirdquestionguess === 'YES'){
-//   // console.log('That is correct. Video games are my favorite!');
-//   alert('That is correct. Video games are my favorite!');
-//   score++;
-// }else if(thirdquestionguess === 'N' || thirdquestionguess === 'NO'){
-//   alert('Sorry you are wrong.');
-// }
+  if(thirdquestionguess === 'Y' || thirdquestionguess === 'YES'){
+  // console.log('That is correct. Video games are my favorite!');
+    alert('That is correct. Video games are my favorite!');
+    score++;
+  }else if(thirdquestionguess === 'N' || thirdquestionguess === 'NO'){
+    alert('Sorry you are wrong.');
+  }
+}
 
-// let fourthQuestionguess = prompt('Do I like to travel?').toLowerCase();
+videogames();
+// console.log('score', score);
+
+
+// function(){
+//   let fourthQuestionguess = prompt('Do I like to travel?').toLowerCase();
 
 // if(fourthQuestionguess === 'y' || fourthQuestionguess === 'yes' ){
 //   // console.log('You are correct.I could travel the whole world if I could.');
@@ -55,8 +64,12 @@ bachelors();
 // }else if(fourthQuestionguess === 'n' || fourthQuestionguess === 'no'){
 //   alert('Sorry that is incorrect');
 // }
+// }
 
-// let fifthQuestionguess = prompt('Do I plan to retire in the US?').toUpperCase();
+
+
+// function(){
+//   let fifthQuestionguess = prompt('Do I plan to retire in the US?').toUpperCase();
 
 // if(fifthQuestionguess === 'Y' || fifthQuestionguess === 'YES'){
 //   alert('Sorry that is incorrect');
@@ -65,10 +78,9 @@ bachelors();
 //   alert('You are correct. I wanna retire back home in Kenya!');
 //   score++;
 // }
-
-// let numGuesses;
-
-
+// }
+// function(){
+//   let numGuesses;
 
 // for (numGuesses = 0; numGuesses < 4; numGuesses++ ){
 //   let sixthQuestionguess = prompt('What is the number of my top destinations?');
@@ -88,8 +100,12 @@ bachelors();
 // if(numGuesses >= 4){
 //   alert('All attempts have been exhausted!Correct number is 10');
 // }
+// }
 
-// let Top10Destinations = ['the great pyramid of giza', 'eiffel tower', 'Machu Pichu', 'Grand Canyon', 'Hawai', 'Chichen Itza', 'Cape of Good Hope', 'Denali National Park', 'Maasai Mara', 'Switzerland'];
+
+
+// function(){
+//   let Top10Destinations = ['the great pyramid of giza', 'eiffel tower', 'Machu Pichu', 'Grand Canyon', 'Hawai', 'Chichen Itza', 'Cape of Good Hope', 'Denali National Park', 'Maasai Mara', 'Switzerland'];
 
 // let Guesscount = 0;
 // let bool = false;
@@ -111,6 +127,6 @@ bachelors();
 //     alert(`Sorry that is incorrect.These are my top 10 destinations : ${Top10Destinations}!`);
 //   }
 // }
-
+// }
 // alert(`Thank you for playing ${guestName}.You scored ${score} points.`);
 
