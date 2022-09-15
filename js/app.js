@@ -69,17 +69,20 @@ function travel(){
 travel();
 
 
-// function(){
-//   let fifthQuestionguess = prompt('Do I plan to retire in the US?').toUpperCase();
+function retire(){
+  let fifthQuestionguess = prompt('Do I plan to retire in the US?').toUpperCase();
 
-// if(fifthQuestionguess === 'Y' || fifthQuestionguess === 'YES'){
-//   alert('Sorry that is incorrect');
-// }else if(fifthQuestionguess === 'N' || fifthQuestionguess === 'NO'){
-//   // console.log('You are correct. I wanna retire back home in Kenya!');
-//   alert('You are correct. I wanna retire back home in Kenya!');
-//   score++;
-// }
-// }
+  if(fifthQuestionguess === 'Y' || fifthQuestionguess === 'YES'){
+    alert('Sorry that is incorrect');
+  }else if(fifthQuestionguess === 'N' || fifthQuestionguess === 'NO'){
+  // console.log('You are correct. I wanna retire back home in Kenya!');
+    alert('You are correct. I wanna retire back home in Kenya!');
+    score++;
+  }
+}
+
+retire();
+
 // function(){
 //   let numGuesses;
 
