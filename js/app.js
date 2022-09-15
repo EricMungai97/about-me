@@ -22,15 +22,19 @@ function born(){
 }
 born();
 
-// let secondQuestionguess = prompt('Do I have a bachelors?').toLowerCase();
+function bachelors(){
+  let secondQuestionguess = prompt('Do I have a bachelors?').toLowerCase();
 
-// if (secondQuestionguess === 'y' || secondQuestionguess ==='yes'){
-//   // console.log('Yay!That is true. I have a bachelors in Commerce.');
-//   alert('Yay!That is true. I have a bachelors in Commerce.');
-//   score++;
-// }else if(secondQuestionguess === 'n' || secondQuestionguess === 'no'){
-//   alert('Sorry that is incorrect.');
-// }
+  if (secondQuestionguess === 'y' || secondQuestionguess ==='yes'){
+  // console.log('Yay!That is true. I have a bachelors in Commerce.');
+    alert('Yay!That is true. I have a bachelors in Commerce.');
+    score++;
+  }else if(secondQuestionguess === 'n' || secondQuestionguess === 'no'){
+    alert('Sorry that is incorrect.');
+  }
+}
+
+bachelors();
 
 // let thirdquestionguess = prompt('Do I play video games?').toUpperCase();
 
