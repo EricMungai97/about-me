@@ -100,15 +100,13 @@ function guessinggame(){
       alert('Please type in a number');
     }
   }
+
+  if(numGuesses >= 4){
+    alert('All attempts have been exhausted!Correct number is 10');
+  }
 }
 
 guessinggame();
-
-// if(numGuesses >= 4){
-//   alert('All attempts have been exhausted!Correct number is 10');
-// }
-// }
-
 
 
 // function(){
