@@ -16,10 +16,8 @@ function born(){
   if (firstQuestionguess === 'Y' || firstQuestionguess === 'YES'){
     alert('Sorry you are wrong');
   } else if (firstQuestionguess === 'N' || firstQuestionguess === 'NO'){
-  // console.log('That is correct.I was born and raised in Nairobi Kenya.');
     alert('That is correct.I was born and raised in Nairobi Kenya.');
     score++;
-
   }
 }
 born();
@@ -28,7 +26,6 @@ function bachelors(){
   let secondQuestionguess = prompt('Do I have a bachelors?').toLowerCase();
 
   if (secondQuestionguess === 'y' || secondQuestionguess ==='yes'){
-  // console.log('Yay!That is true. I have a bachelors in Commerce.');
     alert('Yay!That is true. I have a bachelors in Commerce.');
     score++;
   }else if(secondQuestionguess === 'n' || secondQuestionguess === 'no'){
@@ -42,17 +39,14 @@ function videogames(){
   let thirdquestionguess = prompt('Do I play video games?').toUpperCase();
 
   if(thirdquestionguess === 'Y' || thirdquestionguess === 'YES'){
-  // console.log('That is correct. Video games are my favorite!');
     alert('That is correct. Video games are my favorite!');
     score++;
-  }else if(thirdquestionguess === 'N' || thirdquestionguess === 'NO'){
+  } else if(thirdquestionguess === 'N' || thirdquestionguess === 'NO'){
     alert('Sorry you are wrong.');
   }
 }
 
 videogames();
-// console.log('score', score);
-
 
 function travel(){
   let fourthQuestionguess = prompt('Do I like to travel?').toLowerCase();
@@ -61,7 +55,7 @@ function travel(){
   // console.log('You are correct.I could travel the whole world if I could.');
     alert('You are correct.I could travel the whole world if I could.');
     score++;
-  }else if(fourthQuestionguess === 'n' || fourthQuestionguess === 'no'){
+  } else if(fourthQuestionguess === 'n' || fourthQuestionguess === 'no'){
     alert('Sorry that is incorrect');
   }
 }
@@ -74,8 +68,7 @@ function retire(){
 
   if(fifthQuestionguess === 'Y' || fifthQuestionguess === 'YES'){
     alert('Sorry that is incorrect');
-  }else if(fifthQuestionguess === 'N' || fifthQuestionguess === 'NO'){
-  // console.log('You are correct. I wanna retire back home in Kenya!');
+  } else if(fifthQuestionguess === 'N' || fifthQuestionguess === 'NO'){
     alert('You are correct. I wanna retire back home in Kenya!');
     score++;
   }
@@ -90,13 +83,13 @@ function guessinggame(){
     let sixthQuestionguess = +prompt('What is the number of my top destinations?');
     if(sixthQuestionguess > 10 ){
       alert('too high!');
-    }else if(sixthQuestionguess < 10){
+    } else if(sixthQuestionguess < 10){
       alert('too low!');
-    }else if(sixthQuestionguess === 10){
+    } else if(sixthQuestionguess === 10){
       alert('Yay!That is correct.');
       score++;
       break;
-    }else{
+    } else{
       alert('Please type in a number');
     }
   }
